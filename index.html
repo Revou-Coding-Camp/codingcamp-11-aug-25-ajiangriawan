@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Logo-RevoU-5_1.original.png"
+                    class="logo-icon" alt="Logo RevoU">
+                <span class="logo-text">My Website</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#profile" class="nav-link">Our Profile</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Message Us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hi <span id="userName">User</span>, Welcome To Our Company Website</h1>
+                    <p class="hero-subtitle">Welcome to our official company website, your best solution for all your
+                        needs.</p>
+                    <div class="hero-image">
+                        <img src="https://static.wixstatic.com/media/ab5dd5_6f21d52ab37a40b48a8b362953432b69~mv2.png/v1/fill/w_491,h_333,fp_0.59_0.27,lg_1,q_85,enc_avif,quality_auto/bootcamps%20pict.png"
+                            alt="Hero Image" class="image-hero">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Headquarter Section -->
+        <section id="profile" class="headquarter">
+            <div class="container">
+                <h2 class="section-title">Our Headquarter</h2>
+                <div class="cities-grid">
+                    <div class="city-item">
+                        <div class="city-circle">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="city-name">Jakarta</h3>
+                    </div>
+                    <div class="city-item">
+                        <div class="city-circle">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="city-name">Bandung</h3>
+                    </div>
+                    <div class="city-item">
+                        <div class="city-circle">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="city-name">Surabaya</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="https://uploads-ssl.webflow.com/61af164800e38cf1b6c60b55/6694e471c1691d6a4120a382_Portfolio%20-%20Commo.png"
+                            alt="Project 1" class="portfolio-image">
+                        <h3 class="portfolio-title">Software Engineering</h3>
+                        <p class="portfolio-desc">Develop a captivating and informative online presence for Commo, a one-stop digital agency.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://uploads-ssl.webflow.com/61af164800e38cf1b6c60b55/6690e7859c62458689401acc_portfolio-zurich-vi-6690e77acc2a9.webp" alt="Project 2"
+                            class="portfolio-image">
+                        <h3 class="portfolio-title">Data Analytics</h3>
+                        <p class="portfolio-desc">Improve Zurich's financial performance by optimizing premium payment processes, achieving a healthy cash flow and financial stability.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://uploads-ssl.webflow.com/61af164800e38cf1b6c60b55/6690e2fb7e2bdd5702c3a7e0_portfolio-techuztler-6690e2eaa8ac6.webp" alt="Project 3"
+                            class="portfolio-image">
+                        <h3 class="portfolio-title">Digital Marketing</h3>
+                        <p class="portfolio-desc">Techuztler wants to raise brand awareness on Instagram and TikTok organically.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Message Us</h2>
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="nama">Name</label>
+                                <input type="text" id="nama" name="nama" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tanggal">Date of Birth</label>
+                                <input type="date" id="tanggal" name="tanggal" value="2023-04-02" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="kelamin" value="Male" checked>
+                                        <span class="radio-custom"></span>
+                                        Male
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="kelamin" value="Female">
+                                        <span class="radio-custom"></span>
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pesan">Message</label>
+                                <textarea id="pesan" name="pesan" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-box">
+                            <div class="current-time">
+                                <strong>Current time:</strong> <span id="currentTime"></span>
+                            </div>
+                            <div class="submitted-info" id="submittedInfo" style="display: none;">
+                                <div><strong>Name:</strong> <span id="displayNama"></span></div>
+                                <div><strong>Date of Birth:</strong> <span id="displayTanggal"></span></div>
+                                <div><strong>Gender:</strong> <span id="displayKelamin"></span></div>
+                                <div><strong>Message:</strong> <span id="displayPesan"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Created By Aji Angri Awan</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
